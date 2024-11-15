@@ -1,0 +1,223 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  --fontPassion: "Passion One", sans-serif;
+  --fontSecondary: "Arial MT", sans-serif;
+  --greenDark: #113632;
+  --greenMedium: #319c90;
+  --orangeLight: #dc5c00;
+}
+
+body {
+  font-family: var(--fontPassion);
+}
+
+.root-app {
+  position: relative;
+}
+
+.centralize {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* button: start */
+
+.btn {
+  font-family: var(--fontSecondary);
+  font-size: 1em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--greenMedium);
+  padding: 0.25em 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    font-size 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 0 8px 20px -10px var(--greenDark);
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: hsl(170, 100%, 25%);
+}
+
+.btn-orange {
+  background-color: var(--orangeLight);
+  box-shadow: 0 8px 20px -10px var(--orangeLight);
+}
+
+.btn.btn-orange:hover {
+  background-color: hsl(28, 100%, 50%);
+}
+
+.btn-small {
+  font-size: 70%;
+}
+
+/* button: end */
+
+/* main banner: start */
+
+.main-banner {
+  position: relative;
+  padding: 9em 6em;
+  background: linear-gradient(0.25turn, var(--greenDark), var(--greenMedium));
+}
+
+.main-banner .main-title {
+  font-size: 7em;
+  line-height: 0.8em;
+  letter-spacing: 5px;
+  font-family: var(--fontPassion);
+  color: white;
+  width: 55%;
+  transition: font-size 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 0em 0.1em;
+}
+
+.main-banner .banner-desc {
+  font-size: 1.35em;
+  line-height: 1.25em;
+  letter-spacing: 2px;
+  font-family: var(--fontSecondary);
+  color: white;
+  width: 50%;
+  padding: 1.25em 0;
+  transition: font-size 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-banner .actions-area {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.main-banner .bg-image {
+  position: absolute;
+  height: 100%;
+  right: 18%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.main-banner .bg-image img {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.main-banner .gradient-bg {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  top: auto;
+  background: url(./images/gradient.png);
+  background-position: 0 0;
+  left: 0;
+  background-repeat: repeat-x;
+  display: none;
+  background-size: auto 140%;
+}
+
+@media screen and (max-width: 1366px) {
+  .main-banner {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main-banner {
+    font-size: 90%;
+  }
+
+  .main-banner .bg-image {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .btn {
+    font-size: 110%;
+  }
+
+  .main-banner {
+    font-size: 100%;
+    padding: 9em 4em;
+    padding-top: 50%;
+  }
+
+  .main-banner .gradient-bg {
+    display: block;
+  }
+
+  .main-banner .main-title {
+    font-size: 500%;
+  }
+
+  .main-banner .banner-desc {
+    font-size: 120%;
+  }
+
+  .main-banner .main-title,
+  .main-banner .banner-desc,
+  .main-banner .actions-area {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .main-banner .actions-area .btn-whats {
+    display: none;
+  }
+
+  .main-banner .bg-image {
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 70%;
+    bottom: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .btn {
+    font-size: 80%;
+  }
+
+  .main-banner {
+    padding: 25em 1em 3em 1em;
+  }
+
+  .main-banner .bg-image {
+    height: 80%;
+  }
+
+  .main-banner .bg-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-banner .main-title {
+    font-size: 320%;
+  }
+
+  .main-banner .banner-desc {
+    font-size: 85%;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* main banner: end */
