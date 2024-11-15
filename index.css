@@ -9,6 +9,7 @@ body {
   --greenDark: #113632;
   --greenMedium: #319c90;
   --orangeLight: #dc5c00;
+  --whatsAppColor: #25d366;
 }
 
 body {
@@ -221,3 +222,19 @@ body {
 }
 
 /* main banner: end */
+
+/* whatsapp floating icon: start */
+
+.whatsapp-floating-icon {
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  background-color: var(--whatsAppColor);
+}
+
+/* whatsapp floating icon: end */
