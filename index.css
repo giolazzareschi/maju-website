@@ -50,12 +50,13 @@ body {
 }
 
 .btn-orange {
-  background-color: var(--orangeLight);
+  color: #000;
+  background-color: hsl(28, 100%, 60%);
   box-shadow: 0 8px 20px -10px var(--orangeLight);
 }
 
 .btn.btn-orange:hover {
-  background-color: hsl(28, 100%, 50%);
+  background-color: hsl(28, 50%, 50%);
 }
 
 .btn-small {
