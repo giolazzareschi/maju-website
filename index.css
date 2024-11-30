@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 300%;
   line-height: 100%;
   font-weight: 400;
 }
@@ -29,7 +29,7 @@ h1 {
 }
 
 .centralize {
-  max-width: 1600px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -72,8 +72,8 @@ h1 {
 }
 
 .btn-large {
-  font-size: 110% !important;
-  padding: 1.25em 2em;
+  font-size: 100% !important;
+  padding: 1em 1.5em;
 }
 
 .btn-small {
@@ -249,7 +249,7 @@ h1 {
 
 .video-banner {
   background-color: var(--caquiMedium);
-  padding: 2em 1em;
+  padding: 4em 1em;
 }
 
 .video-banner h1 {
@@ -305,7 +305,7 @@ h1 {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 16pt;
+  gap: 2em;
 }
 
 .who-banner .grid-items-who .who-item {
@@ -335,6 +335,69 @@ h1 {
 }
 
 /* who banner: end */
+
+/* access banner: start */
+
+.access-banner {
+  background-color: #8aaaa6;
+  padding: 2em 1em;
+}
+
+.access-banner .access-grid-items {
+  padding: 5em 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+}
+
+.access-banner .access-grid-items .access-grid-item {
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.access-banner .access-grid-items .access-grid-item-centralizer {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #bb783d;
+  background: linear-gradient(#f8c9a7, #cd9973);
+  box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  padding: 79px 30px 57px 30px;
+  gap: 0.25em;
+  font-family: var(--fontSecondary);
+  line-height: 150%;
+  text-align: center;
+  font-size: 100%;
+  max-width: 260px;
+}
+
+.access-banner .access-grid-items .access-grid-item-centralizer .circle-icon {
+  background-color: var(--greenMedium);
+  color: white;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 980px) {
+  .access-banner .access-grid-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* access banner: end */
 
 /* whatsapp floating icon: start */
 
