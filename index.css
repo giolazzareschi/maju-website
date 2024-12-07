@@ -452,3 +452,87 @@ h1 {
 }
 
 /* whatsapp floating icon: end */
+
+/* why-i-can-help: start */
+.why-i-can-help {
+  padding: 2em 1em;
+}
+
+.why-i-can-help .profile-pic {
+  display: block;
+  border: 0px solid #333;
+  border-radius: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  margin: 1em 0 2em 0;
+}
+
+.why-i-can-help .profile-pic img {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: -100%;
+}
+
+.why-i-can-help .text-font {
+  font-family: var(--fontSecondary);
+  font-size: 130%;
+  font-weight: 100;
+}
+
+.why-i-can-help .maju-name {
+  font-family: var(--fontSecondary);
+  font-size: 200%;
+  font-weight: 800;
+}
+
+.why-i-can-help .text-font p {
+  width: 70%;
+  line-height: 200%;
+}
+
+.why-i-can-help .text-font ul {
+  padding-left: 2em;
+}
+
+.why-i-can-help .text-font ul li {
+  line-height: 200%;
+}
+
+.why-i-can-help .text-font .btn {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .why-i-can-help .profile-pic img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -70%;
+  }
+
+  .why-i-can-help .text-font p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .why-i-can-help .profile-pic img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-i-can-help .profile-pic img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -0%;
+  }
+}
+
+/* why-i-can-help: end */
