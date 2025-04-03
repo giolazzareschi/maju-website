@@ -7,7 +7,7 @@ body {
   --fontPassion: "Passion One", sans-serif;
   --fontSecondary: "Arial MT", sans-serif;
   --greenDark: #113632;
-  --greenMedium: #319c90;
+  --greenMedium: #197e72;
   --orangeLight: #dc5c00;
   --whatsAppColor: #25d366;
   --caquiMedium: #b49e8e;
@@ -122,6 +122,10 @@ h1 {
   align-items: center;
 }
 
+.main-banner .actions-area .btn.btn-whats {
+  background-color: #1c914d;
+}
+
 .main-banner .bg-image {
   position: absolute;
   height: 100%;
@@ -148,7 +152,7 @@ h1 {
   left: 0;
   background-repeat: repeat-x;
   display: none;
-  background-size: auto 140%;
+  background-size: auto 160%;
 }
 
 @media screen and (max-width: 1440px) {
@@ -196,10 +200,7 @@ h1 {
     width: 100%;
     text-align: center;
     justify-content: center;
-  }
-
-  .main-banner .actions-area .btn-whats {
-    display: none;
+    flex-direction: column;
   }
 
   .main-banner .bg-image {
@@ -329,6 +330,7 @@ h1 {
   display: flex;
   padding: 1em;
   gap: 0.25em;
+  transform: scale(0);
 }
 
 .who-banner .who-item .text-line {
@@ -392,6 +394,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(0);
 }
 
 .access-banner .access-grid-items .access-grid-item-centralizer {
@@ -534,3 +537,22 @@ h1 {
 }
 
 /* why-i-can-help: end */
+
+/* animations: start */
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/* animations: end */

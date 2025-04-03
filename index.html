@@ -44,9 +44,9 @@
               <button class="btn btn-orange btn-medium btn-more">Quero saber um pouco mais</button>
             </a>
 
-            <a href="https://wa.me/+5547988624585?text=Ola! Gostaria de conhecer melhor sua mentoria para pais, posso tirar algumas dúvidas?"
+            <a href="https://wa.me/+5547988624585?text=Ola! Gostaria de saber sobre o atendimento presencial para o meu filho"
               target="_blank">
-              <button class="btn btn-medium btn-whats">Fale comigo pelo WhatsApp</button>
+              <button class="btn btn-medium btn-whats">Atendimento presencial clique aqui</button>
             </a>
           </div>
         </div>
@@ -58,7 +58,7 @@
         <h1>Veja o vídeo e <br />entenda a mentoria</h1>
 
         <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/f4E5i-VC3ec?si=7vjdKdH0lQF6FeJk"
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/UpzivtbWy44?si=RVV5-elPedKPWTu3"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -181,13 +181,12 @@
             </div>
           </div>
 
-
           <div class="access-grid-item">
             <div class="access-grid-item-centralizer">
               <div class="circle-icon">
-                <img alt="Avaliação personalizada feita por uma terapeuta especializada." src="./images/icon1.svg" />
+                <img alt="Conhecimento de uma profissional com várioas casos e situações" src="./images/icon1.svg" />
               </div>
-              Avaliação personalizada feita por uma terapeuta especializada.
+              Conhecimento de uma profissional com várioas casos e situações.
             </div>
           </div>
 
@@ -269,7 +268,7 @@
           <br />
 
           <p>
-            Vamos conversar! Tenho muito a acrescentar e compartilhar e espero seu contato.
+            Vamos conversar! Tenho muito a acrescentar, compartilhar e espero seu contato.
           </p>
 
           <br />
@@ -295,4 +294,58 @@
   </div>
 </body>
 
-</html>`
+<script>
+  window.document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('scroll', function (e) {
+      const whoArea = document.querySelector('.who-banner');
+
+      const bounds = whoArea.getBoundingClientRect();
+
+      if (bounds.top - 400 <= 0) {
+        const boxes = document.querySelectorAll('.who-item');
+
+        let delay = 0;
+
+        for (const box of boxes) {
+          setTimeout(() => {
+            box.classList.add('scale-up-center')
+          }, 400 + delay);
+
+          delay = delay + 300
+        }
+      } else {
+        const boxes = document.querySelectorAll('.who-item');
+
+        for (const box of boxes) {
+          box.classList.remove('scale-up-center')
+        }
+      }
+
+      const accessBanner = document.querySelector('.access-banner');
+
+      const boundsAccess = accessBanner.getBoundingClientRect();
+
+      if (boundsAccess.top - 400 <= 0) {
+        const boxesAccess = document.querySelectorAll('.access-grid-item');
+
+        let delay = 0;
+
+        for (const box of boxesAccess) {
+          setTimeout(() => {
+            box.classList.add('scale-up-center')
+          }, 400 + delay);
+
+          delay = delay + 300
+        }
+      } else {
+        const boxesAccess = document.querySelectorAll('.access-grid-item');
+
+        for (const box of boxesAccess) {
+          box.classList.remove('scale-up-center')
+        }
+      }
+    });
+  })
+</script>
+
+</html>
